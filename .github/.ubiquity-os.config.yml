@@ -1,0 +1,28 @@
+plugins:
+  ubiquity-os-marketplace/command-start-stop@demo: null
+  ubiquity-os/command-demo@demo: null
+  ubiquity-os-marketplace/command-wallet@demo: null
+  ubiquity-os-marketplace/command-query@demo: null
+  ubiquity-os-marketplace/text-conversation-rewards@demo:
+    with:
+      incentives:
+        collaboratorOnlyPaymentInvocation: false
+        contentEvaluator: {}
+        userExtractor: {}
+        dataPurge: {}
+        formattingEvaluator: {}
+        payment: {}
+        githubComment: {}
+        reviewIncentivizer: {}
+        simplificationIncentivizer: {}
+        externalContent: {}
+      payment:
+        automaticTransferMode: false
+      rewards:
+        erc20RewardToken: "0x4F35e5C4D233f0cA201B3FFc006c29f6CefD1Fe7"
+        evmPrivateEncrypted: "NW8J9dtSMjdA3kjplJp2W4_C3q1fHm3SBHMsd8vwiSYNT94ee3DfB1QgSPKrVCuk9H5d1ldj7FoqhjB9THd2gIsWX5zJMXrZlyU1mxoIFsCgqnG5trk5KoNZMxhCbKl8v3ZuVMRU55RcxgH9OQ6CGl3FWdGKArXOpp0s6eWZ95wWqLtjgQ"
+        evmNetworkId: 100
+  ubiquity-os-marketplace/daemon-disqualifier@demo: null
+  ubiquity-os-marketplace/text-vector-embeddings@demo:
+    with:
+      demoFlag: true
